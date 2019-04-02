@@ -9,7 +9,8 @@ function bot_manager($message, $chat_id)
 	//Понижение регистра
 	$mess = strtolower($message);
 	//Менеджер
-        if ($mess[0] == "/")
+	if ($mess[0] == "/")
+		{
 		//----- Обязательные команды -- help и start
                 if (substr($mess,1,4) == "help") return TBHELP;
                 if (substr($mess,1,5) == "start") return TBSTART;
@@ -19,9 +20,10 @@ function bot_manager($message, $chat_id)
 		//----- Умный одногруппник -----
 		if (substr($mess,1,4) == "rasp") raspisan($chat_id);
 		//----- Команды помошники -----
-                if (substr($mess,1,7) == "chat_id") sendMessage($chat_id, $chat_id);
+		if (substr($mess,1,7) == "chat_id") sendMessage($chat_id, $chat_id);
+		}
+	if ($mess == "Вова") sendMessage($id_chat, "Скрылев");
 	}
-	
 ?>
 
 
