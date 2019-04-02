@@ -16,8 +16,8 @@ function bot_manager($message, $chat_id)
 	if ($mess[0] == "/")
 		{
 		//----- Обязательные команды -- help и start
-                if (substr($mess,1,4) == "help") return TBHELP;
-                if (substr($mess,1,5) == "start") return TBSTART;
+        if (substr($mess,1,4) == "help") return TBHELP;
+        if (substr($mess,1,5) == "start") return TBSTART;
 		//----- CCNA_BOT ----
 		if (substr($mess,1,5) == "proxy") return TBPROXY;
 		if (substr($mess,1,3) == "ip") return TBIPI;
