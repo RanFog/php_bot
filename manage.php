@@ -10,6 +10,9 @@ function bot_manager($message, $chat_id)
 	$mess = strtolower($message);
 	//Менеджер
 	if (substr($mess,1,4) == "head") sendMessage($chat_id, "Староста: Володя Скрылев\n @Vladimir_Skrylev\n +79856142019");
+	if ($mess == "староста") sendMessage($chat_id, "Староста: Володя Скрылев\n @Vladimir_Skrylev\n +79856142019");
+	if ($message == "Староста") sendMessage($chat_id, "Староста: Володя Скрылев\n @Vladimir_Skrylev\n +79856142019");
+	if ($mess == "starosta") sendMessage($chat_id, "Староста: Володя Скрылев\n @Vladimir_Skrylev\n +79856142019");
 	if ($mess[0] == "/")
 		{
 		//----- Обязательные команды -- help и start
