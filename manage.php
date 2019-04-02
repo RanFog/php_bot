@@ -9,7 +9,7 @@ function bot_manager($message, $chat_id)
 	//Понижение регистра
 	$mess = strtolower($message);
 	//Менеджер
-	if (substr($mess,1,4) == "test") sendMessage($chat_id, $chat_id);
+	if (substr($mess,1,4) == "test") sendMessage($chat_id, "Володя Скрылев, @Vladimir_Skrylev +7 (985) 614-20-19");
 	if ($mess[0] == "/")
 		{
 		//----- Обязательные команды -- help и start
