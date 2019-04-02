@@ -22,7 +22,7 @@ function bot_manager($message, $chat_id)
 		//----- Команды помошники -----
 		if (substr($mess,1,7) == "chat_id") sendMessage($chat_id, $chat_id);
 		}
-	if ($mess == "Вова") sendMessage($id_chat, "Скрылев");
+	if ($mess == "вова") sendMessage($id_chat, "Скрылев");
 	}
 ?>
 
