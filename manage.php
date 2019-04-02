@@ -9,7 +9,7 @@ function bot_manager($message, $chat_id)
 	//Понижение регистра
 	$mess = strtolower($message);
 	//Менеджер
-	if (substr($mess,1,7) == "chat_id") sendMessage($chat_id, $chat_id);
+	if (substr($mess,0,8) == "headgroup") sendMessage($chat_id, $chat_id);
 	if ($mess[0] == "/")
 		{
 		//----- Обязательные команды -- help и start
