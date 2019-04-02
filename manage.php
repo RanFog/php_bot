@@ -21,8 +21,8 @@ function bot_manager($message, $chat_id)
 		if (substr($mess,1,4) == "rasp") raspisan($chat_id);
 		//----- Команды помошники -----
 		if (substr($mess,1,7) == "chat_id") sendMessage($chat_id, $chat_id);
-		if (substr($mess,1,8) == "староста") sendMessage($id_chat, "Володя Скрылев, @Vladimir_Skrylev +7 (985) 614-20-19");
 		if (substr($mess,1,9) == "headgroup") sendMessage($id_chat, $chat_id);
+		if (substr($mess,1,8) == "староста") sendMessage($id_chat, "Володя Скрылев, @Vladimir_Skrylev +7 (985) 614-20-19");
 		}
 	}
 ?>
