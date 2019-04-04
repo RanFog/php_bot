@@ -1,6 +1,6 @@
 <?php
 //Файл менеджер - распознает команды и запускает сооветсвующие скрипты
-include 'Auth/Auth.php';
+include 'Auth/Auth.php';	   //Файл авторизации
 include 'tfcommands/text.php'; //Файл с текстами команд
 include 'UO/UO.php';           //Команды умного одногруппника
 //include 'ip.php';
