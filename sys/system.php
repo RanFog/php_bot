@@ -5,6 +5,7 @@ $output = json_decode(file_get_contents('php://input'), TRUE);
 $chat_id = $output['message']['chat']['id'];
 $first_name = $output['message']['chat']['first_name'];
 $message = $output['message']['text'];
+$user_id = $output['message']['user']['id'];
 
 function sendMessage($chat_id, $message) //Функция ответа сообщением
  {
