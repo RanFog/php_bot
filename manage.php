@@ -4,7 +4,7 @@ include 'tfcommands/text.php'; //Файл с текстами команд
 include 'UO/UO.php';           //Команды умного одногруппника
 //include 'ip.php';
 
-function bot_manager($message, $chat_id)
+function bot_manager($message, $chat_id, $user_id)
         {
 	//Понижение регистра
 	$mess = strtolower($message);
