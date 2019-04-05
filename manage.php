@@ -3,6 +3,7 @@
 include 'Auth/Auth.php';	   //Файл авторизации
 include 'tfcommands/text.php'; //Файл с текстами команд
 include 'UO/UO.php';           //Команды умного одногруппника
+include 'CCNA/ping.php';
 //include 'ip.php';
 
 function bot_manager($message, $chat_id, $user_id)
