@@ -2,6 +2,6 @@
 function ($mess)
     {    
     $ip = explode(" ", $mess);
-    return shell_exec ("ping -c 4".$ip[1]);
+    return $ip[1];//shell_exec ("ping -c 4".$ip[1]);
     }
 ?>
