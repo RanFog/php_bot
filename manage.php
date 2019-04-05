@@ -21,7 +21,8 @@ function bot_manager($message, $chat_id, $user_id)
  		        if (substr($mess,1,5) == "start") return TBSTART;
 			    //----- CCNA_BOT ----
 			    if (substr($mess,1,5) == "proxy") return TBPROXY;
-			    if (substr($mess,1,3) == "ip") return TBIPI;
+				if (substr($mess,1,3) == "ip") return TBIPI;
+				if (substr($mess,1,3) == "ping") ping($mess);
 			    //----- Умный одногруппник -----
 			    if (substr($mess,1,4) == "rasp") raspisan($chat_id);
 			    //----- Команды помошники -----
