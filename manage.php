@@ -22,7 +22,7 @@ function bot_manager($message, $chat_id, $user_id)
 			    //----- CCNA_BOT ----
 			    if (substr($mess,1,5) == "proxy") return TBPROXY;
 				if (substr($mess,1,3) == "ip") return TBIPI;
-				if (substr($mess,1,4) == "ping") ping($mess);
+				if (substr($mess,1,4) == "ping") return ping($mess);
 			    //----- Умный одногруппник -----
 			    if (substr($mess,1,4) == "rasp") raspisan($chat_id);
 			    //----- Команды помошники -----
