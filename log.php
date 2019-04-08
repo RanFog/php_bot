@@ -18,4 +18,5 @@ function wr_output_mess_to_logs($chat_id, $message)
     fclose($lfile);
     //sendMessage($chat_id, "Записано");
     }
+    
 ?>
