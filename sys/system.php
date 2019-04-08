@@ -8,7 +8,12 @@ $chat_id = $output['message']['chat']['id'];
 $first_name = $output['message']['chat']['first_name'];
 $message = $output['message']['text'];
 $user_id = $output['message']['from']['id'];
-
+//----Пока не используются:
+$who_write = $output['from']['is_bot'];              //Кто написал: true - бот. false - человек
+$first_name = $output['from']['first_name'];         //Имя написавшего (Может быть не указано в профиле!)
+$last_name = $output['from']['last_name'];           //Фамилия написавшего (Может быть не указано в профиле!)
+$username = $output['from']['username'];             //Ник написавшего
+$language_code = $output ['from']['language_code'];  //Язык написавшего 
 //Функции для ответов
 function sendMessage($chat_id, $message) //Функция ответа сообщением
  {

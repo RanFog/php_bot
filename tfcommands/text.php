@@ -13,5 +13,4 @@ const TBMASK = "Зарезервировано. В разработке";
 const TBPREF = "Зарезервировано. В разработке";
 const TBCCNATHEORYINDEX = "Зарезервировано. В разработке";
 const TBCCNACOMMANDINDEX = "Зарезервировано. В разработке";
-//const TBCHATID = $chat_id;
 ?>
