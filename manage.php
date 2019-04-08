@@ -24,11 +24,11 @@ function bot_manager($message, $chat_id, $user_id)
 				if (substr($mess,1,3) == "ip") return TBIPI;
 				if (substr($mess,1,4) == "ping") return ping($mess);
 			    //----- Умный одногруппник -----
-			    if (substr($mess,1,4) == "rasp") raspisan($chat_id);
+				if (substr($mess,1,4) == "rasp") raspisan($chat_id);
+				if (substr($mess,1,9) == "headgroup") return TBHEADGROUP;
 			    //----- Команды помошники -----
 			    if (substr($mess,1,7) == "chat_id") sendMessage($chat_id, $chat_id);
 			    if (substr($mess,1,7) == "user_id") sendMessage($chat_id, $user_id);
-				if (substr($mess,1,9) == "headgroup") sendMessage($chat_id, "Владимир Скрылев, @Vladimir_Skrylev +7 (985) 614-20-19");
 				break;
 			    }
 		case 'student':
@@ -41,12 +41,12 @@ function bot_manager($message, $chat_id, $user_id)
 			    if (substr($mess,1,5) == "proxy") return TBPROXY;
 			    if (substr($mess,1,3) == "ip") return TBIPI;
 		    	//----- Умный одногруппник -----
-		    	if (substr($mess,1,4) == "rasp") raspisan($chat_id);
+				if (substr($mess,1,4) == "rasp") raspisan($chat_id);
+				if (substr($mess,1,9) == "headgroup") sendMessage($chat_id, "Владимир Скрылев, @Vladimir_Skrylev +7 (985) 614-20-19");
 		  		//----- Команды помошники -----
 		    	if (substr($mess,1,7) == "chat_id") sendMessage($chat_id, $chat_id);
 		   	    if (substr($mess,1,7) == "user_id") sendMessage($chat_id, $user_id);
 		  	    if (substr($mess,1,9) == "headgroup") sendMessage($id_chat, $chat_id);
-				if (substr($mess,1,9) == "headgroup") sendMessage($chat_id, "Владимир Скрылев, @Vladimir_Skrylev +7 (985) 614-20-19");
 				break;
 				}
 		default: break;
