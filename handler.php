@@ -6,7 +6,7 @@ include 'manage.php';     //Главный менеджер - ищет кома�
 include 'sys/system.php'; //Подготавливает ответ и раздербанивает json
 include 'log.php';        //Ведение лога
 
- wr_json_to_logs($output);
+ wr_json_to_logs($chat_id);
  $preload_text = bot_manager($message, $chat_id, $user_id);	
 //---------------------------------------------K
  sendMessage($chat_id, $preload_text);
