@@ -3,7 +3,8 @@
 include 'Auth/Auth.php';	   //Файл авторизации
 include 'tfcommands/text.php'; //Файл с текстами команд
 include 'UO/UO.php';           //Команды умного одногруппника
-include 'CCNA/ping.php';	   
+include 'CCNA/ping.php';
+include 'CCNA/math.php';	   
 //include 'CCNA/ip.php';
 
 function bot_manager($message, $chat_id, $user_id)
@@ -23,6 +24,7 @@ function bot_manager($message, $chat_id, $user_id)
 			    if (substr($mess,1,5) == "proxy") return TBPROXY;
 				if (substr($mess,1,3) == "ip") return TBIPI;
 				if (substr($mess,1,4) == "ping") return ping($mess);
+				if (substr($mess,1,4) == "mask") return mask($mess);
 			    //----- Умный одногруппник -----
 				if (substr($mess,1,4) == "rasp") raspisan($chat_id);
 				if (substr($mess,1,9) == "headgroup") return TBHEADGROUP;
