@@ -3,14 +3,14 @@
 include 'Auth/Auth.php';	   //Файл авторизации
 include 'tfcommands/text.php'; //Файл с текстами команд
 include 'UO/UO.php';           //Команды умного одногруппника
-include 'CCNA/ping.php';
+include 'CCNA/ping.php';	   
 //include 'CCNA/ip.php';
 
 function bot_manager($message, $chat_id, $user_id)
     {
 	//Понижение регистра
 	$mess = strtolower($message);
-	sendMessage($chat_id, $chat_id);
+	
 	switch (Auth($user_id))
 		{
 		case 'root':
