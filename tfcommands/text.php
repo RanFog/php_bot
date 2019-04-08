@@ -16,7 +16,7 @@ const TBHELP_ROOT = "Привет. Ваша роль ROOT. Вам доступн
 const TBHELP = "Привет. Ваша роль STUDENT";
 const TBSTART = "Привет. Я умный бот. \nО том, что я умею можно узнать по команде /help";
 const TBPROXY = "Для подключения прокси кликни по ссылке:\nhttps://t.me/proxy?server=142.93.134.100&port=3434&secret=1d3a72af7b07e06c0db56fcfa4a75f5c";
-const TBLOGS = "Файл логов здесь:\n142.93.134.100/telebots/FRTEST/logs/input_logs\n П.с. Удобно читать в Visual Studio Code или браузере, так будут переносы строки в отличии от блокнота :)";
+const TBLOGS = "Файл логов здесь:\n142.93.134.100/telebots/FRTEST/logs/inputs_logs\n П.с. Удобно читать в Visual Studio Code или браузере, так будут переносы строки в отличии от блокнота :)";
 const TBHEADGROUP = "Староста 
 Владимир Андреевич Скрылев, 
 @Vladimir_Skrylev 
