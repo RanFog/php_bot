@@ -1,9 +1,9 @@
 <?php
 
-function wr_json_to_logs($chat_id)
+function wr_json_to_logs($output)
     {
     $lfile = fopen('logs/input_logs', 'wr');
-    fputs($lfile, $chat_id);
+    fputs($lfile, $output);
     fclose($lfile);
     //sendMessage($chat_id, "Записано");
     }
