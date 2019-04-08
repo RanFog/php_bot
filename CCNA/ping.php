@@ -1,7 +1,7 @@
 <?php
-function ping($mess)
+function ping($mess) // Команда пинг запускает с сервера пинг до какого-либо ресурса. Например "/ping ya.ru"
     {    
-    $ip = explode(" ", $mess);
-    return shell_exec ("ping -c 4 ".$ip[1]);
+    $ip = explode(" ", $mess); //Сохраняет в $ip[1] все, что идет после пробела, например 
+    return shell_exec ("ping -c 4 ".$ip[1]); // Набрать в коммандной строке "ping -c 4 'адрес ресурса'" и вернуть результат
     }
 ?>
