@@ -10,7 +10,7 @@ function bot_manager($message, $chat_id, $user_id)
     {
 	//Понижение регистра
 	$mess = strtolower($message);
-
+	sendMessage($chat_id, $chat_id);
 	switch (Auth($user_id))
 		{
 		case 'root':
