@@ -1,6 +1,6 @@
 <?php
 
-function wr_json_to_logs()
+function wr_json_to_logs($output)
     {
     $lfile = fopen('logs/input_logs', 'wr');
     fputs($lfile, $output);
